@@ -1,1 +1,1 @@
-# backend_structure
+Dashboard html structure
