@@ -10,6 +10,7 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
       <link rel="stylesheet" media="screen" type="text/css" href="assets/backend/css/font-awesome-4.5.0/css/font-awesome.min.css">
       <script src="assets/backend/js/jquery.1.11.1.min.js"></script>
+      <script src="assets/backend/js/jquery-migrate-1.2.1.min.js"></script>
       <link href="assets/backend/css/bootstrap.min.css" rel="stylesheet">
       <script src="assets/backend/js/bootstrap.min.js"></script>
       <link rel="stylesheet" media="screen" type="text/css" href="assets/backend/css/geral.min.css">
@@ -22,6 +23,11 @@
     <![endif]-->
 	<!-- js files -->
 
+      <script src="assets/backend/js/jquery-lightbox.js"></script>
+
+      <script src="assets/backend/js/jquery-ui.min.js"></script>
+      <link href="assets/backend/css/jquery-ui.min.css" rel="stylesheet">
+
       <script src="assets/backend/js/backend.js"></script>
 
       <!-- include summernote css/js-->
@@ -31,134 +37,8 @@
   </head>
   <body>
   	<div id="geral" class="login">
-        <div class="header">
-            <div class="header__inner">
-                <div class="box-left">
-                    <h1>Painel de controle</h1>
-                    <h2>Nome do cliente</h2>
-                </div>
-                <div class="box-right">
-                    <a href="#" class="simple-button-with-icon">
-                        <i class="fa fa-power-off"></i>
-                        <span class="txt">Sair</span>
-                    </a>
-                </div>
-                <div class="clear"></div>
-            </div>
-        </div>
-        <div class="sidebar">
-            <div class="sidebar__inner">
-                <div class="sidebar__menu">
-                    <ul>
-                        <li class="sidebar__menu__header"><p><i class="fa fa-inbox fa-lg"></i><span>Menu</span></p></li>
-                        <li class="sidebar__menu__bt submenu-wrapper">
-                            <a href="#" class="bt-main">
-                                <div>
-                                    <span>Item 1</span>
-                                </div>
-                                <i class="fa fa-chevron-down"></i>
-                            </a>
-                            <div class="submenu">
-                                <ul>
-                                    <li class="subitem">
-                                        <a href="#">
-                                            <div>
-                                                <span>Item 1</span>
-                                            </div>
-                                            <i class="fa fa-chevron-right"></i>
-                                        </a>
-                                    </li>
-                                    <li class="subitem">
-                                        <a href="#">
-                                            <div>
-                                                <span>Item 1</span>
-                                            </div>
-                                            <i class="fa fa-chevron-right"></i>
-                                        </a>
-                                    </li>
-                                    <li class="subitem">
-                                        <a href="#">
-                                            <div>
-                                                <span>Item 1</span>
-                                            </div>
-                                            <i class="fa fa-chevron-right"></i>
-                                        </a>
-                                    </li>
-                                    <li class="subitem">
-                                        <a href="#">
-                                            <div>
-                                                <span>Item 1</span>
-                                            </div>
-                                            <i class="fa fa-chevron-right"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="sidebar__menu__bt">
-                            <a href="#" class="bt-main">
-                                <div>
-                                    <span>Item 1</span>
-                                </div>
-                                <i class="fa fa-chevron-right"></i>
-                            </a>
-                        </li>
-                        <li class="sidebar__menu__bt">
-                            <a href="#" class="bt-main">
-                                <div>
-                                    <span>Item 1</span>
-                                </div>
-                                <i class="fa fa-chevron-right"></i>
-                            </a>
-                        </li>
-                        <li class="sidebar__menu__bt submenu-wrapper">
-                            <a href="#" class="bt-main">
-                                <div>
-                                    <span>Item 1</span>
-                                </div>
-                                <i class="fa fa-chevron-down"></i>
-                            </a>
-                            <div class="submenu">
-                                <ul>
-                                    <li class="subitem">
-                                        <a href="#">
-                                            <div>
-                                                <span>Item 1</span>
-                                            </div>
-                                            <i class="fa fa-chevron-right"></i>
-                                        </a>
-                                    </li>
-                                    <li class="subitem">
-                                        <a href="#">
-                                            <div>
-                                                <span>Item 1</span>
-                                            </div>
-                                            <i class="fa fa-chevron-right"></i>
-                                        </a>
-                                    </li>
-                                    <li class="subitem">
-                                        <a href="#">
-                                            <div>
-                                                <span>Item 1</span>
-                                            </div>
-                                            <i class="fa fa-chevron-right"></i>
-                                        </a>
-                                    </li>
-                                    <li class="subitem">
-                                        <a href="#">
-                                            <div>
-                                                <span>Item 1</span>
-                                            </div>
-                                            <i class="fa fa-chevron-right"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+        <?php include_once "header.php"; ?>
+        <?php include_once "menu.php"; ?>
         <div class="container-wrapper">
             <div class="container__inner">
                 <div class="container__wrapper">
@@ -166,6 +46,8 @@
                         <div class="header__section__inner">
                             <p class="title"><span>Edição</span><i class="fa fa-chevron-right"></i>Usuários</p>
                             <a href="#" class="button"><i class="fa fa-plus"></i></a>
+                            <a href="#" class="button"><i class="fa fa-th-list"></i></a>
+
                             <div class="clear"></div>
                         </div>
                     </div>
@@ -200,6 +82,7 @@
                                             <div class="tab-box__content active" data-box="2015">
                                                 <div class="listagem-conteudo">
                                                     <div class="checkbox ativo">
+                                                        <input type="hidden" name="#">
                                                         <a href="#" class=""><i class="fa fa-check"></i></a>
                                                         <span class="txt-checkbox">Ativar</span>
                                                     </div>
@@ -219,21 +102,25 @@
                                                         <span class="title-value">Permissões de acesso</span>
                                                         <div class="inner">
                                                             <div class="checkbox ativo">
+                                                                <input type="hidden" name="#">
                                                                 <a href="#" class=""><i class="fa fa-check"></i></a>
                                                                 <span class="txt-checkbox">Tipo</span>
                                                                 <input type="hidden" value="">
                                                             </div>
                                                             <div class="checkbox ativo">
+                                                                <input type="hidden" name="#">
                                                                 <a href="#" class=""><i class="fa fa-check"></i></a>
                                                                 <span class="txt-checkbox">Tipo</span>
                                                                 <input type="hidden" value="">
                                                             </div>
                                                             <div class="checkbox ativo">
+                                                                <input type="hidden" name="#">
                                                                 <a href="#" class=""><i class="fa fa-check"></i></a>
                                                                 <span class="txt-checkbox">Tipo</span>
                                                                 <input type="hidden" value="">
                                                             </div>
                                                             <div class="checkbox ativo">
+                                                                <input type="hidden" name="#">
                                                                 <a href="#" class=""><i class="fa fa-check"></i></a>
                                                                 <span class="txt-checkbox">Tipo</span>
                                                                 <input type="hidden" value="">
@@ -251,6 +138,19 @@
                                                             </div>
                                                         </div>
                                                         <span class="descricao-file">Tamanho da imagem: 100x100px</span>
+                                                    </div>
+                                                    <div class="custom-select" data-id="select">
+                                                        <span class="title-value">Select</span>
+                                                        <div class="inner">
+                                                            <div id="select">
+                                                                <select>
+                                                                    <option value="AL">Alabama</option>
+                                                                    <option value="AK">Alaska</option>
+                                                                    <option value="AZ">Arizona</option>
+                                                                    <option value="AR">Arkansas</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                     <div class="text-area">
                                                         <span class="title-value">Nome Item</span>
@@ -316,7 +216,7 @@
                                         <div class="img-box-wrapper">
                                             <img src="assets/backend/img/img.png">
                                         </div>
-                                        <a href="#" class="bt"></a>
+                                        <a href="#" class="bt">EXCLUIR</a>
                                     </div>
                                 </div>
                                 <div class="box-img">
@@ -324,7 +224,7 @@
                                         <div class="img-box-wrapper">
                                             <img src="assets/backend/img/img.png">
                                         </div>
-                                        <a href="#" class="bt"></a>
+                                        <a href="#" class="bt">EXCLUIR</a>
                                     </div>
                                 </div>
                                 <div class="box-img">
@@ -332,7 +232,7 @@
                                         <div class="img-box-wrapper">
                                             <img src="assets/backend/img/img.png">
                                         </div>
-                                        <a href="#" class="bt"></a>
+                                        <a href="#" class="bt">EXCLUIR</a>
                                     </div>
                                 </div>
                                 <div class="box-img">
@@ -340,7 +240,7 @@
                                         <div class="img-box-wrapper">
                                             <img src="assets/backend/img/img.png">
                                         </div>
-                                        <a href="#" class="bt"></a>
+                                        <a href="#" class="bt">EXCLUIR</a>
                                     </div>
                                 </div>
                                 <div class="box-img">
@@ -348,7 +248,7 @@
                                         <div class="img-box-wrapper">
                                             <img src="assets/backend/img/img.png">
                                         </div>
-                                        <a href="#" class="bt"></a>
+                                        <a href="#" class="bt">EXCLUIR</a>
                                     </div>
                                 </div>
 

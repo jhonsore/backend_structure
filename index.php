@@ -19,6 +19,7 @@
     <![endif]-->
 	<!-- js files -->
     <script src="assets/backend/js/jquery.1.11.1.min.js"></script>
+      <script src="assets/backend/js/jquery-migrate-1.2.1.min.js"></script>
   </head>
   <body>
   	<div id="geral" class="login">

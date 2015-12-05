@@ -3,6 +3,28 @@ $(document).ready(function()
     initMenu();
     initTabs();
     initInputFile();
+    initCheckbox();
+    initMenuMobile();
+    initSelect();
+
+
+
+
+    //open lightbox
+    var _html = "<div class='message-wrapper'>" +
+
+        "<div class='inner'><i class='fa fa-close icon error-color'></i>" +
+
+        //sucess message
+        /*"<div class='inner'><i class='fa fa-check icon sucess-color'></i>" +*/
+
+        //alert message
+        /*"<div class='inner'><i class='fa fa-exclamation-triangle icon alert-color'></i>" +*/
+        "<p>Esta é uma mensagem</p>" +
+        "<a class='lightbox-button-close bt bt-grey' href='#'>FECHAR MENSAGEM</a>" +
+        "</div>" +
+        "</div>";
+    callMensagem(_html);
 
     if($('.summernote').size()>0){
         $('.summernote').summernote({
@@ -22,11 +44,101 @@ $(document).ready(function()
             }
         });
     }
+
+    $(window).resize(resizeHandler);
 });
 
 //---------------------------------------------------------------
 //
 //---------------------------------------------------------------
+function resizeHandler ()
+{
+    var _check = $(".sidebar_open").size();
+
+    if(_check>0 && $(window).width()>890)
+    {
+        $(".sidebar_open").removeClass("sidebar_open");
+        $(".sidebar").removeAttr("style");
+        $(".blocker-menu").css({display:"none"});
+        $("#bt-menu-mobile").removeClass("close-bt-hamburguer");
+    }
+}
+
+function initSelect ()
+{
+
+    if($(".custom-select").size() > 0)
+    {
+        $(".custom-select").each(function(){
+            var _id = $(this).data("id");
+            $('#'+_id+' select').selectmenu(
+                {
+                    appendTo: "#"+_id,
+                    change: function( event, ui ) {
+
+                    },
+                    select: function( event, ui ) {
+
+                    }
+                }
+            );
+
+        });
+    }
+
+}
+
+function initMenuMobile()
+{
+    $("#bt-menu-mobile").click(function(){
+
+        var _check = $(".sidebar_open").size();
+
+        if(_check>0)
+        {
+            closeMenuMobile();
+        }
+        else
+        {
+            $("body").addClass("sidebar_open");
+            $(".sidebar").css({ left: -300, display:"block"});
+            $(".sidebar").stop(true,true).animate({left:0},300);
+            $(".blocker-menu").css({display:"block"});
+        }
+
+        $(this).toggleClass("close-bt-hamburguer");
+
+        return false;
+    });
+}
+
+function closeMenuMobile ()
+{
+    $(".sidebar_open").removeClass("sidebar_open");
+    $(".sidebar").stop(true,true).animate({left:-300},300,function(){
+        $(".sidebar").removeAttr("style");
+    });
+    $(".blocker-menu").css({display:"none"});
+}
+
+function initCheckbox ()
+{
+    $(".checkbox a").each(function()
+    {
+        var _parent = $(this).parent();
+        if(_parent.hasClass("ativo"))
+        {
+            $('input',_parent).val(1);
+        }
+    });
+
+    $(".checkbox a").click(function(){
+        var _parent = $(this).parent();
+        _parent.toggleClass("ativo");
+        $("input",_parent).val((_parent.hasClass("ativo")) ? 1 : 0);
+        return false;
+    });
+}
 function initInputFile ()
 {
     $(".fake-input-file .fake-input-file__input-hide").each(function(){
@@ -126,6 +238,22 @@ function initMenu ()
         return false;
     });
 }
+
+function callMensagem (_html)
+{
+    $('#modal-window').lightbox({
+        added: function(){},
+        zIndex:99999,
+        destroyed: function(){},
+        background:'background-color:rgba(0,0,0,.8);',
+        time:300,
+        width:300,
+        type:'html',
+        contentHtml:_html,
+        closeWhenClickOutside:true
+    });
+}
+
 function checkForm(idForm)
 {
 	

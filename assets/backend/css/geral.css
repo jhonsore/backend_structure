@@ -107,6 +107,18 @@ textarea {
 /*******************************/
 /*******************************/
 /*VARIABLES*/
+/*******************************/
+/*******************************/
+/*******************************/
+/*******************************/
+/*******************************/
+/*******************************/
+.sidebar_open {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
 .simple-button-with-icon {
   color: #ffffff;
   text-decoration: none !important;
@@ -134,6 +146,9 @@ textarea {
 .bt:hover {
   background-color: #0f7763;
 }
+.bt.bt-grey {
+  background-color: #bdc3c7;
+}
 .header {
   background-color: #16a085;
   padding: 0 !important;
@@ -143,10 +158,11 @@ textarea {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 50;
 }
 .header .header__inner {
   padding: 20px 30px;
+  position: relative;
 }
 .header h1 {
   margin: 0px !important;
@@ -199,7 +215,7 @@ textarea {
   top: 0;
   bottom: 0;
   left: 0;
-  z-index: 5;
+  z-index: 20;
   display: block;
   overflow-x: hidden;
   overflow-y: auto;
@@ -322,7 +338,7 @@ textarea {
 }
 .msg-logged {
   background-color: #ffffff;
-  border: 1px solid #cccccc;
+  border: 1px solid #e3e4df;
   max-width: 300px;
   margin: 100px auto;
   border-radius: 5px;
@@ -364,7 +380,7 @@ textarea {
   font-size: 12px;
 }
 .header__section .header__section__inner .button {
-  margin-top: 3px;
+  margin: 3px 0 0 10px;
   float: right;
 }
 .header__section .header__section__inner .button i {
@@ -508,7 +524,7 @@ textarea {
   color: #ffffff;
 }
 .header__section .header__section__inner .bt-remover-galeria:hover {
-  background-color: #b94741;
+  background-color: #a12722;
 }
 .input-file .box-item {
   width: 100%;
@@ -567,25 +583,6 @@ textarea {
 .txt-checkbox {
   padding-left: 10px;
   color: #929292;
-}
-/*Responsive yessss*/
-@media screen and (max-width: 35.5em) {
-  .tab-box .tab-box__menu {
-    display: none;
-  }
-  .tab-box__bt__mobile {
-    display: block;
-  }
-  .tab-box .tab-box__wrapper {
-    min-height: auto;
-    padding: 10px 0;
-  }
-  .tab-box__item .tab-box__itens {
-    padding: 8px 10px;
-  }
-  .tab-box__bt__mobile {
-    margin: 8px 10px;
-  }
 }
 .td-ativo {
   width: 50px;
@@ -676,7 +673,7 @@ textarea {
 .pagination a {
   float: left;
   padding: 3px 6px;
-  border: 1px solid #cccccc;
+  border: 1px solid #e3e4df;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -719,7 +716,7 @@ textarea {
   padding: 0 5px;
 }
 .galeria-imagens .img-box-wrapper {
-  border: 1px solid #cccccc;
+  border: 1px solid #e3e4df;
   height: 140px;
   width: 100%;
   overflow: hidden;
@@ -727,6 +724,35 @@ textarea {
 .galeria-imagens .img-box-wrapper img {
   margin: 0 auto;
   display: block;
+}
+.galeria-imagens .box-img .bt {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  background-color: #d0604d;
+  font-size: 11px;
+  padding: 3px;
+  text-decoration: none;
+  text-align: center;
+}
+.galeria-imagens .box-img .bt:hover {
+  background-color: #a12722;
+  color: #ffffff;
+}
+.custom-select {
+  margin-top: 20px;
+  width: 50%;
+}
+.custom-select .ui-selectmenu-button {
+  width: 100% !important;
+  background: none;
+  border-color: #e3e4df;
+}
+.bt-logout:hover span {
+  color: #a12722;
+}
+.bt-logout:hover i {
+  color: #a12722;
 }
 .border-default {
   border: 1px solid #e3e4df;
@@ -750,4 +776,158 @@ textarea {
   -moz-border-radius: 0;
   padding: 15px 20px;
   margin-top: 20px;
+}
+#bt-menu-mobile {
+  display: none;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  background: none;
+  width: 40px;
+  margin: 20px 20px 0 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 30px;
+}
+#bt-menu-mobile span {
+  background-color: #ffffff;
+  display: block;
+  height: 5px;
+  position: absolute;
+  width: 100%;
+}
+#bt-menu-mobile span.top {
+  top: 0;
+}
+#bt-menu-mobile span.middle {
+  top: 50%;
+  margin-top: -2px;
+}
+#bt-menu-mobile span.bottom {
+  top: 100%;
+  margin-top: -2px;
+}
+#bt-menu-mobile.close-bt-hamburguer .middle {
+  opacity: 0;
+}
+#bt-menu-mobile.close-bt-hamburguer span.top {
+  margin: -2px 0 0 -3px;
+  top: 50%;
+  width: 120%;
+  -moz-transform: rotate(-40deg);
+  -webkit-transform: rotate(-40deg);
+  -o-transform: rotate(-40deg);
+  -ms-transform: rotate(-40deg);
+}
+#bt-menu-mobile.close-bt-hamburguer span.bottom {
+  margin: -2px 0 0 -3px;
+  top: 50%;
+  width: 120%;
+  -moz-transform: rotate(40deg);
+  -webkit-transform: rotate(40deg);
+  -o-transform: rotate(40deg);
+  -ms-transform: rotate(40deg);
+}
+#bt-menu-mobile span {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.blocker-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+}
+.alert-color {
+  color: #f1c40f;
+}
+.sucess-color {
+  color: #3498db;
+}
+.error-color {
+  color: #c0392b;
+}
+#modal-window .message-wrapper {
+  width: 300px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  position: relative;
+  text-align: center;
+}
+#modal-window .message-wrapper .lightbox-button-close {
+  text-align: center;
+  font-size: 12px;
+  line-height: 15px;
+  padding: 4px 0;
+  text-decoration: none;
+  margin-top: 20px;
+}
+#modal-window .message-wrapper .lightbox-button-close:hover {
+  background-color: #0f7763;
+  color: #ffffff;
+}
+#modal-window .message-wrapper .inner {
+  padding: 15px;
+}
+#modal-window .message-wrapper .icon {
+  font-size: 100px;
+  line-height: 100px;
+}
+/*Responsive yessss*/
+@media screen and (max-width: 890px) {
+  .sidebar {
+    display: none;
+    width: 260px;
+  }
+  .menu-secundario {
+    display: none;
+  }
+  .container-wrapper .container__inner {
+    padding-left: 0;
+  }
+  .galeria-imagens .box-img {
+    width: 33.33%;
+  }
+  #bt-menu-mobile {
+    display: block;
+  }
+}
+@media screen and (max-width: 568px) {
+  .tab-box .tab-box__menu {
+    display: none;
+  }
+  .tab-box__bt__mobile {
+    display: block;
+  }
+  .tab-box .tab-box__wrapper {
+    min-height: auto;
+    padding: 10px 0;
+  }
+  .tab-box__item .tab-box__itens {
+    padding: 8px 10px;
+  }
+  .tab-box__bt__mobile {
+    margin: 8px 10px;
+  }
+  .galeria-imagens .box-img {
+    width: 50%;
+  }
+  .header h1 {
+    font-size: 15px !important;
+  }
+  .header h2 {
+    font-size: 12px !important;
+  }
+  .header .header__inner {
+    padding: 20px 10px;
+  }
 }
