@@ -1,11 +1,131 @@
 $(document).ready(function()
 {	
+    initMenu();
+    initTabs();
+    initInputFile();
 
+    if($('.summernote').size()>0){
+        $('.summernote').summernote({
+            height: 200,
+            tabsize: 2,
+            codemirror: {
+                theme: 'monokai'
+            },
+            toolbar: [
+                ['style', ['bold', 'italic', 'underline', 'clear']],
+                ['font', ['strikethrough']],
+                ['color', ['color']]
+            ],
+            onChange: function(contents, $editable) {
+                var _parent = $(contents).parent().parent();
+                _parent.find('.summernote').text($editable);
+            }
+        });
+    }
 });
 
 //---------------------------------------------------------------
 //
 //---------------------------------------------------------------
+function initInputFile ()
+{
+    $(".fake-input-file .fake-input-file__input-hide").each(function(){
+        $(this)
+            .change(function (evt) {
+                var _file_name = $(this).val().split('\\').pop();
+                $(".fake-input-file__label", $(this).parent()).text(_file_name);
+            });
+    });
+}
+function initTabs()
+{
+
+    $(".tab-box .tab-box__bt").click(function(){
+        callTab ($(this));
+        return false;
+    });
+
+    $(".tab-box .tab-box__bt__mobile").click(function(){
+        callTab ($(this));
+        return false;
+    });
+
+    function callTab (__arg__)
+    {
+        var _href = __arg__.data( "box" );
+        var _tab = __arg__.closest( ".tab-box " );
+        var _class = __arg__.attr('class').toString();
+
+        $(".tab-box__bt",_tab).each(function(){
+            if($(this).data("box") == _href)
+            {
+                $(".tab-box__tab",_tab).removeClass("active");
+                $(this).parent().addClass("active");
+                return false;
+            }
+        });
+
+        $(".tab-box__content",_tab).each(function(){
+            if($(this).data("box") == _href && !$(this).hasClass("active"))
+            {
+                if(_class.search('tab-box__bt__mobile')==0)
+                {
+                    $(".tab-box__content.active",_tab).slideUp(300,function(){
+                        $(this).removeAttr('style');
+                        $(".tab-box__content.active",_tab).removeClass("active");
+                    });
+
+                    $(this).slideDown(300,function(){
+                        $(this).removeAttr('style');
+                        $(this).addClass("active");
+                    });
+                }
+                else
+                {
+                    $(".tab-box__content.active",_tab).removeClass("active");
+                    $(this).addClass("active");
+                }
+
+                return false;
+            }
+        });
+
+        if(_class.search('tab-box__bt__mobile')==0)
+        {
+            $(".tab-box__bt__mobile.active",_tab).removeClass("active");
+            __arg__.addClass("active");
+        }
+    }
+}
+function initMenu ()
+{
+    $('.submenu-wrapper .bt-main').click(function()
+    {
+        var _submenu = $(".submenu", $(this).parent());
+        var _check = $(this).parent().hasClass("open");
+
+        if($(".submenu-wrapper.open").size() > 0)
+        {
+            $(".submenu-wrapper.open .submenu").stop(true,true).slideUp(200);
+
+            $(".bt-main .fa",$(".submenu-wrapper.open")).addClass("fa-chevron-down");
+            $(".bt-main .fa",$(".submenu-wrapper.open")).removeClass("fa-chevron-up");
+
+            $(".submenu-wrapper.open").removeClass("open");
+        }
+
+        if(!_check)
+        {
+            $(this).parent().addClass("open");
+            _submenu.stop(true,true).slideDown(300);
+            $(".fa",$(this)).removeClass("fa-chevron-down");
+            $(".fa",$(this)).addClass("fa-chevron-up");
+        }
+
+
+        return false;
+    });
+}
 function checkForm(idForm)
 {
 	
