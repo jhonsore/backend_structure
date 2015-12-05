@@ -33,23 +33,24 @@
             </div>
         </div>
         <div class="form-sign">
-            <form name="formLogin" method="post" action="check.php">
-                <div class="item">
-                    <div class="item__iner">
-                        <input type="text" placeholder="Usuário">
+            <form name="formLogin" method="post" action="home.php">
+                <div class="form">
+                    <div class="item">
+                        <div class="item__iner">
+                            <input type="text" placeholder="Usuário">
+                        </div>
                     </div>
-                </div>
-                <hr>
-                <div class="item">
-                    <div class="item__iner">
-                        <input type="password" placeholder="Senha">
+                    <hr>
+                    <div class="item">
+                        <div class="item__iner">
+                            <input type="password" placeholder="Senha">
+                        </div>
                     </div>
-                </div>
 
+                </div>
+                <input type="submit" class="bt" value="ENVIAR">
             </form>
-            <input type="submit" class="bt" value="ENVIAR">
         </div>
-
     </div>
   </body>
 </html>

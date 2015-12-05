@@ -94,7 +94,7 @@
                                                                     <p>Lorem ipsum donec sidenuc...</p>
                                                                 </td>
                                                                 <td class="td-editar">
-                                                                    <a href="#" class=""><i class="fa fa-pencil-square-o"></i></a>
+                                                                    <a href="cadastro-galeria.php" class=""><i class="fa fa-pencil-square-o"></i></a>
                                                                 </td>
                                                                 <td class="td-remover">
                                                                     <a href="#" class=""><i class="fa fa-trash"></i></a>
@@ -111,7 +111,7 @@
                                                                     <p>Lorem ipsum donec sidenuc...</p>
                                                                 </td>
                                                                 <td class="td-editar">
-                                                                    <a href="#" class=""><i class="fa fa-pencil-square-o"></i></a>
+                                                                    <a href="cadastro-galeria.php" class=""><i class="fa fa-pencil-square-o"></i></a>
                                                                 </td>
                                                                 <td class="td-remover">
                                                                     <a href="#" class=""><i class="fa fa-trash"></i></a>
@@ -128,7 +128,7 @@
                                                                     <p>Lorem ipsum donec sidenuc...</p>
                                                                 </td>
                                                                 <td class="td-editar">
-                                                                    <a href="#" class=""><i class="fa fa-pencil-square-o"></i></a>
+                                                                    <a href="cadastro-galeria.php" class=""><i class="fa fa-pencil-square-o"></i></a>
                                                                 </td>
                                                                 <td class="td-remover">
                                                                     <a href="#" class=""><i class="fa fa-trash"></i></a>
@@ -145,7 +145,7 @@
                                                                     <p>Lorem ipsum donec sidenuc...</p>
                                                                 </td>
                                                                 <td class="td-editar">
-                                                                    <a href="#" class=""><i class="fa fa-pencil-square-o"></i></a>
+                                                                    <a href="cadastro-galeria.php" class=""><i class="fa fa-pencil-square-o"></i></a>
                                                                 </td>
                                                                 <td class="td-remover">
                                                                     <a href="#" class=""><i class="fa fa-trash"></i></a>
@@ -162,7 +162,7 @@
                                                                     <p>Lorem ipsum donec sidenuc...</p>
                                                                 </td>
                                                                 <td class="td-editar">
-                                                                    <a href="#" class=""><i class="fa fa-pencil-square-o"></i></a>
+                                                                    <a href="cadastro-galeria.php" class=""><i class="fa fa-pencil-square-o"></i></a>
                                                                 </td>
                                                                 <td class="td-remover">
                                                                     <a href="#" class=""><i class="fa fa-trash"></i></a>
@@ -179,7 +179,7 @@
                                                                     <p>Lorem ipsum donec sidenuc...</p>
                                                                 </td>
                                                                 <td class="td-editar">
-                                                                    <a href="#" class=""><i class="fa fa-pencil-square-o"></i></a>
+                                                                    <a href="cadastro-galeria.php" class=""><i class="fa fa-pencil-square-o"></i></a>
                                                                 </td>
                                                                 <td class="td-remover">
                                                                     <a href="#" class=""><i class="fa fa-trash"></i></a>
@@ -196,7 +196,7 @@
                                                                     <p>Lorem ipsum donec sidenuc...</p>
                                                                 </td>
                                                                 <td class="td-editar">
-                                                                    <a href="#" class=""><i class="fa fa-pencil-square-o"></i></a>
+                                                                    <a href="cadastro-galeria.php" class=""><i class="fa fa-pencil-square-o"></i></a>
                                                                 </td>
                                                                 <td class="td-remover">
                                                                     <a href="#" class=""><i class="fa fa-trash"></i></a>
@@ -239,7 +239,7 @@
                                                                     <p>Lorem ipsum donec sidenuc...</p>
                                                                 </td>
                                                                 <td class="td-editar">
-                                                                    <a href="#" class=""><i class="fa fa-pencil-square-o"></i></a>
+                                                                    <a href="cadastro-galeria.php" class=""><i class="fa fa-pencil-square-o"></i></a>
                                                                 </td>
                                                                 <td class="td-remover">
                                                                     <a href="#" class=""><i class="fa fa-trash"></i></a>
@@ -256,7 +256,7 @@
                                                                     <p>Lorem ipsum donec sidenuc...</p>
                                                                 </td>
                                                                 <td class="td-editar">
-                                                                    <a href="#" class=""><i class="fa fa-pencil-square-o"></i></a>
+                                                                    <a href="cadastro-galeria.php" class=""><i class="fa fa-pencil-square-o"></i></a>
                                                                 </td>
                                                                 <td class="td-remover">
                                                                     <a href="#" class=""><i class="fa fa-trash"></i></a>
@@ -273,7 +273,7 @@
                                                                     <p>Lorem ipsum donec sidenuc...</p>
                                                                 </td>
                                                                 <td class="td-editar">
-                                                                    <a href="#" class=""><i class="fa fa-pencil-square-o"></i></a>
+                                                                    <a href="cadastro-galeria.php" class=""><i class="fa fa-pencil-square-o"></i></a>
                                                                 </td>
                                                                 <td class="td-remover">
                                                                     <a href="#" class=""><i class="fa fa-trash"></i></a>
@@ -290,7 +290,7 @@
                                                                     <p>Lorem ipsum donec sidenuc...</p>
                                                                 </td>
                                                                 <td class="td-editar">
-                                                                    <a href="#" class=""><i class="fa fa-pencil-square-o"></i></a>
+                                                                    <a href="cadastro-galeria.php" class=""><i class="fa fa-pencil-square-o"></i></a>
                                                                 </td>
                                                                 <td class="td-remover">
                                                                     <a href="#" class=""><i class="fa fa-trash"></i></a>
@@ -309,7 +309,7 @@
                                                                     <p>Lorem ipsum donec sidenuc...</p>
                                                                 </td>
                                                                 <td class="td-editar">
-                                                                    <a href="#" class=""><i class="fa fa-pencil-square-o"></i></a>
+                                                                    <a href="cadastro-galeria.php" class=""><i class="fa fa-pencil-square-o"></i></a>
                                                                 </td>
                                                                 <td class="td-remover">
                                                                     <a href="#" class=""><i class="fa fa-trash"></i></a>
@@ -352,7 +352,7 @@
                                                                     <p>Lorem ipsum donec sidenuc...</p>
                                                                 </td>
                                                                 <td class="td-editar">
-                                                                    <a href="#" class=""><i class="fa fa-pencil-square-o"></i></a>
+                                                                    <a href="cadastro-galeria.php" class=""><i class="fa fa-pencil-square-o"></i></a>
                                                                 </td>
                                                                 <td class="td-remover">
                                                                     <a href="#" class=""><i class="fa fa-trash"></i></a>
@@ -370,7 +370,7 @@
                                                                     <p>Lorem ipsum donec sidenuc...</p>
                                                                 </td>
                                                                 <td class="td-editar">
-                                                                    <a href="#" class=""><i class="fa fa-pencil-square-o"></i></a>
+                                                                    <a href="cadastro-galeria.php" class=""><i class="fa fa-pencil-square-o"></i></a>
                                                                 </td>
                                                                 <td class="td-remover">
                                                                     <a href="#" class=""><i class="fa fa-trash"></i></a>

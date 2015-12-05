@@ -14,7 +14,7 @@
                     <div class="submenu">
                         <ul>
                             <li class="subitem">
-                                <a href="#">
+                                <a href="listagem.php">
                                     <div>
                                         <span>Item 1</span>
                                     </div>
@@ -22,7 +22,7 @@
                                 </a>
                             </li>
                             <li class="subitem">
-                                <a href="#">
+                                <a href="listagem.php">
                                     <div>
                                         <span>Item 1</span>
                                     </div>
@@ -30,7 +30,7 @@
                                 </a>
                             </li>
                             <li class="subitem">
-                                <a href="#">
+                                <a href="listagem.php">
                                     <div>
                                         <span>Item 1</span>
                                     </div>
@@ -38,7 +38,7 @@
                                 </a>
                             </li>
                             <li class="subitem">
-                                <a href="#">
+                                <a href="listagem.php">
                                     <div>
                                         <span>Item 1</span>
                                     </div>
@@ -49,7 +49,7 @@
                     </div>
                 </li>
                 <li class="sidebar__menu__bt">
-                    <a href="#" class="bt-main">
+                    <a href="listagem.php" class="bt-main">
                         <div>
                             <span>Item 1</span>
                         </div>
@@ -57,7 +57,7 @@
                     </a>
                 </li>
                 <li class="sidebar__menu__bt">
-                    <a href="#" class="bt-main">
+                    <a href="listagem.php" class="bt-main">
                         <div>
                             <span>Item 1</span>
                         </div>
@@ -65,7 +65,7 @@
                     </a>
                 </li>
                 <li class="sidebar__menu__bt submenu-wrapper">
-                    <a href="#" class="bt-main">
+                    <a href="listagem.php" class="bt-main">
                         <div>
                             <span>Item 1</span>
                         </div>
@@ -74,7 +74,7 @@
                     <div class="submenu">
                         <ul>
                             <li class="subitem">
-                                <a href="#">
+                                <a href="listagem.php">
                                     <div>
                                         <span>Item 1</span>
                                     </div>
@@ -82,7 +82,7 @@
                                 </a>
                             </li>
                             <li class="subitem">
-                                <a href="#">
+                                <a href="listagem.php">
                                     <div>
                                         <span>Item 1</span>
                                     </div>
@@ -90,7 +90,7 @@
                                 </a>
                             </li>
                             <li class="subitem">
-                                <a href="#">
+                                <a href="listagem.php">
                                     <div>
                                         <span>Item 1</span>
                                     </div>
@@ -98,7 +98,7 @@
                                 </a>
                             </li>
                             <li class="subitem">
-                                <a href="#">
+                                <a href="listagem.php">
                                     <div>
                                         <span>Item 1</span>
                                     </div>
