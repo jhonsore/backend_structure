@@ -604,12 +604,18 @@ input, textarea{font-family: 'Open Sans', sans-serif !important;}
 
 .galeria-imagens{
   margin-top: 10px;
+  .box-img{width: 20%; float: left; }
+}
 
-  .box-img{ width: 20%; float: left; margin-bottom: 10px;}
+.box-img{
+  margin-bottom: 10px;
   .box-img__inner{ padding: 0 5px;}
   .img-box-wrapper{ border: 1px solid @border_color_default; height: 140px; width: 100%; overflow: hidden;}
-  .img-box-wrapper img{  margin: 0 auto; display: block;}
-  .box-img .bt{
+  .img-box-wrapper img{ display: block;
+    display: block;
+    width: 120% !important;
+    height: auto !important;}
+  .bt{
     .rounded-corners(0);
     background-color: @red_color;
     font-size: 11px;
@@ -617,11 +623,13 @@ input, textarea{font-family: 'Open Sans', sans-serif !important;}
     text-decoration: none;
     text-align: center;
   }
-  .box-img .bt:hover{
+  .bt:hover{
     background-color: @red_color_hover;
     color: #ffffff;
   }
 }
+
+.box-img-file-input{max-width: 200px; margin-top: 20px;}
 
 .custom-select{
   margin-top: 20px;

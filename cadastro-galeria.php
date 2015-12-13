@@ -139,6 +139,14 @@
                                                         </div>
                                                         <span class="descricao-file">Tamanho da imagem: 100x100px</span>
                                                     </div>
+                                                    <div class="box-img box-img-file-input">
+                                                        <div class="box-img__inner">
+                                                            <div class="img-box-wrapper">
+                                                                <img src="assets/backend/img/img.png">
+                                                            </div>
+                                                            <a href="#" class="bt">EXCLUIR</a>
+                                                        </div>
+                                                    </div>
                                                     <div class="custom-select" data-id="select">
                                                         <span class="title-value">Select</span>
                                                         <div class="inner">
